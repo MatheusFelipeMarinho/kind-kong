@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: echo
-        image: hashicorp/http-echo
+        image: 419030450067.dkr.ecr.us-east-1.amazonaws.com/ms-finances
         args:
         - "-text=bar"
         ports:
