@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ms-products
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ms-products
+  template:
+    metadata:
+      labels:
+        app: ms-products
+    spec:
+      containers:
+      - image: bitnami/laravel
+        name: ms-products
+        ports:
+        - containerPort: 80
