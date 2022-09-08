@@ -13,7 +13,6 @@ metadata:
 spec:
   ingressClassName: kong
   rules:
-  - host: "httpbin.local"
     http:
       paths:
       - path: /
